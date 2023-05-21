@@ -5,6 +5,7 @@ Description: This is a Quiz plugin for Gutenberg editor.
 Version: 1.0.0
 Author: Greatkhanjoy
 Author URI: https://greatkhanjoy.me/
+Plugin URI: https://github.com/greatkhanjoy/WordPress-Quiz-Plugin/
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
