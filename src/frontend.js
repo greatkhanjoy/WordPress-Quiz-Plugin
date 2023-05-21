@@ -14,20 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const Quiz = ({ data }) => {
-  const [correctAnswer, setCorrectAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(undefined);
   const [isCorrectDelayed, setIsCorrectDelayed] = useState(undefined);
 
   const handleAnswer = (index) => {
-    setCorrectAnswer(index);
     if (index == data.correctAnswer) {
       setIsCorrect(true);
     } else {
-      // alert('Wrong Answer')
       setIsCorrect(false);
     }
   };
-  console.log(data.answerColor);
 
   useEffect(() => {
     if (isCorrect === false) {
