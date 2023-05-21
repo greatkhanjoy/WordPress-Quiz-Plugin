@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quiz-edit-block {
+  @apply bg-[#f1f1f1] p-[20px] rounded-[2px] border border-[#d6d6d6];
+}
+
+.mark-as-correct {
+  @apply text-[#ffd700] cursor-pointer relative top-2;
+}

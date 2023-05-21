@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.correct_message{
+    opacity: 0;
+    z-index: 0;
+    animation: correct-message_anim 1s ease-in-out forwards;
+}
+
+@keyframes correct-message_anim{
+    0%{
+        opacity: 0;
+        z-index: 0;
+    }
+    100%{
+        opacity: 1;
+        z-index: 100;
+    }
+}
+
+.correct_message_hide{
+    opacity: 1;
+    z-index: 100;
+    animation: correct-message_hide_anim 1s ease-in-out forwards;
+}
+
+@keyframes correct-message_hide_anim{
+    0%{
+        opacity: 1;
+        z-index: 100;
+    }
+    100%{
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.incorrect_message {
+    opacity: 0;
+    animation: correct-message_anim 1s ease-in-out forwards;
+}
+
+@keyframes incorrect_message_anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.incorrect_message_hide {
+    opacity: 1;
+    animation: correct-message_hide_anim 1s ease-in-out forwards;
+}
+
+@keyframes incorrect_message_hide_anim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
